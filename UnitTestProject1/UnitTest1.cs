@@ -19,10 +19,6 @@ namespace UnitTestProject1
             Assert.IsTrue(chromeDriver.FindElement(By.XPath("//*[@id=\"rso\"]/div[1]")).Text.Contains("iTechArt"));
             Assert.IsTrue(chromeDriver.Title.Contains("iTechArt"));
         }
-        [TestCleanup]
-        public void TearDown()
-        {
-            chromeDriver.Quit();
-        }
+        
     }
 }
